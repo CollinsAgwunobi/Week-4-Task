@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upskill Week 4 Task</title>
+    <style>
+        form {
+            max-width: 600px;
+			margin: 50px auto;
+			padding: 30px;
+			box-shadow: black 0pt 0pt 1pt 1pt;
+            background-color: bisque;}
+        body {
+            background-image: url(./Assets/images/House.jpg);background-position: center;
+            text-align: center; margin-bottom: 10px;
+        }
+        div {text-align: left; width: 85%; margin: 3%;}
+        label {font-size: 15pt; text-align: left;}
+        input {padding: 10pt;max-width: fit-content; }
+        textarea {width: 85%;}
+        button {background-color: rgb(40, 187, 40);
+        font-size: 20pt; width: 85%; 
+			margin-top: 50px;
+			}
+    </style>
+</head>
+<body>
+    
+    <form>
+    <h1>Upskill Survey Form</h1>
+        <div class="form-control">
+            <label for="name" id="Label Name">Name</label> <br>
+            <input type="text" id="Name" placeholder="Enter your name">
+        </div>
+
+        <p><div class="form-control">
+            <label for="Email" id="Email">Email</label> <br>
+            <input type="email" id="Email" placeholder="Enter your Email">
+        </div></p>
+        <p> <div class="form-control">
+            <label for="Age" id="Age"> Age</label> <br>
+            <input type="Age" id="Age" placeholder="Input your age">
+        </div> </p>
+
+        <div>
+            <label for="Description" id="Description">Which Option Best  Describes You?</label><br>
+            <select name="Description" id="Description">
+            <option value="Tall">Tall</option>
+            <option value="Average">Average</option>
+            <option value="Short">Short</option>
+            <option value="Others">Others</option>
+        </select>
+        </div>
+        <p> <div>
+            <label>Would you recommend Upskill to a friend?</label><br>
+            <label for="Recommendation">
+            <input type="radio" id="recommend" name="Recommendation"> Yes</input></label><br>
+
+            <label for="Recommendation">
+            <input type="radio" id="recommed" name="Recommendation" > No </input> </label> <br>
+
+            <label for="Recommendation">
+                <input type="radio" id="recommed" name="Recommendation" > Maybe </input>
+            </label>
+        </div></p>
+        <p>
+            <div>
+                <label for="Framework" id="framework">Languages and framworks known (Check all that apply)</label> <br>
+                <input type="checkbox" name="C" id="C">C <br>
+                <input type="checkbox" name="C++" id="C+ +"> C++ <br>
+                <input type="checkbox" name="C#" id="C#"> C # <br>
+                <input type="checkbox" name="Java" id="Java"> Java <br>
+                <input type="checkbox" name="Phyton" id="Phyton"> Phyton <br>
+                <input type="checkbox" name="Javescript" id="Javascript"> Javascript <br>
+                <input type="checkbox" name="React" id="React"> React <br>
+                <input type="checkbox" name="Django" id="Django"> Django <br>
+                <input type="checkbox" name="Spring" id="Spring"> Spring
+            </div>
+        </p>
+        <p>
+            <div>
+                <label for="text">Any Comments or Suggestions?</label> <br>
+                <textarea name="Comments" id="Comments" cols="50" rows="3" placeholder="Enter your comments here"></textarea>
+            </div>
+        </p>
+        <p>
+            <div>
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </p>
+    </form>
+</body>
+</html>
